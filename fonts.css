@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'Lato';
+	url('./assets/fonts/LatoLatin-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lato';
+	url('./assets/fonts/LatoLatin-Semibold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lato';
+	url('./assets/fonts/LatoLatin-Medium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lato';
+	url('./assets/fonts/LatoLatin-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lato';
+	url('./assets/fonts/LatoLatin-Black.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
