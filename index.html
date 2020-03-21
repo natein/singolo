@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/fonts.css"/>
   <link rel="stylesheet" href="style.css"/>
+
   <title>Singolo</title>
 </head>
 
@@ -17,13 +18,13 @@
           <div class="logo">
             <h1><a href="#" class="logo">Singolo<span>*</span></a></h1>
           </div>
-          <nav class="header__navigation">
-            <ul class="navigation">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+          <nav class="header__navigation" id ="home">
+            <ul class="navigation" id="menu">
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#aboutus">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -34,27 +35,29 @@
       <section class="hero">
         <div class="wrapper_hero">
           <div class="content">
-            <div class="arrow arrow_left">
-              <button id="arrow_left"><img src="./assets/icons/arrow-left.svg" alt="right arrow"/></button>
+          <a class="arrows arrow_left" href="#" role="button"><img src="./assets/img/slider/arrow-left.svg"/></a>
+           <div id="slider1">
+            <div class="iphone_vert" id="iphone_vert">
+              <div></div>
+              <img src="./assets/img/slider/phone-vertical-slider1.png" alt="iPhone vertical"/>
             </div>
-            <div class="iphone_vert">
-              <img class="shadow" src="./assets/img/shadow.png" alt="shadow"/>        
-              <img class="iphone" src="./assets/img/iphone.png" alt="iphone"/>
-              <img class="screen" src="./assets/img/screen_green.png" alt="screen"/>
+            <div class="iphone_horz" id="iphone_horz">
+              <div></div>
+              <img src="./assets/img/slider/phone-horizontal-slider1.png" alt="iPhone horizontal"/>
             </div>
-            <div class="iphone_horz">
-              <img class="shadow" src="./assets/img/shadow.png" alt="shadow"/>        
-              <img class="iphone" src="./assets/img/iphone.png" alt="iphone"/>
-              <img class="screen" src="./assets/img/screen.png" alt="screen"/>        
-            </div>
-            <div class="arrow arrow_right">
-              <button id="arrow_right"><img src="./assets/icons/arrow-left.svg" alt="right arrow"/></button> 
-            </div>      
-          </div>
-        </div>
+           </div>
+           <div id="slider2">
+            <div class="iphone" id="iphone">
+                <div></div>
+                <img src="./assets/img/slider/phone-slider2.png" alt="three iPhones"/>
+              </div>
+           </div>           
+           <a class="arrows arrow_right" href="#" role="button"><img src="./assets/img/slider/arrow-right.svg"/></a>
+         </div>
+       </div>
       </section>
 
-      <section class="services">
+      <section class="services" id ="services">
         <div class="wrapper_services">
           <div class="content">
             <h2>Our Services</h2>
@@ -114,43 +117,43 @@
         </div>
       </section>
       
-      <section class="portfolio">
+      <section class="portfolio" id ="portfolio">
         <div class="wrapper_portfolio">
           <div class="content">
             <h2>Portfolio</h2>
             <p class="long">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <div class = "tags">
+            <div class="tags" id="tags">
               <button id="all">All</button>
               <button id="webdesign">Web Design</button>
               <button id="graphicdesign">Graphic Design</button>
               <button id="artwork">Artwork</button>
             </div>
-            <div class="gallery">
-              <div class="gallery__item"><img src="./assets/img/row1/1.jpg" width="220" height="187" alt="boat" /></div>
-              <div class="gallery__item"><img src="./assets/img/row1/2.jpg" width="220" height="187" alt="sum" /></div>
-              <div class="gallery__item"><img src="./assets/img/row1/3.jpg" width="220" height="187" alt="city" /></div>
-              <div class="gallery__item"><img src="./assets/img/row1/4.jpg" width="220" height="187" alt="robot" /></div>
-              <div class="gallery__item"><img src="./assets/img/row2/1.jpg" width="220" height="187" alt="red ass" /></div>
-              <div class="gallery__item"><img src="./assets/img/row2/2.jpg" width="220" height="187" alt="sdk" /></div>
-              <div class="gallery__item"><img src="./assets/img/row2/3.jpg" width="220" height="187" alt="abstract" /></div>
-              <div class="gallery__item"><img src="./assets/img/row2/4.jpg" width="220" height="187" alt="chicken" /></div>
-              <div class="gallery__item"><img src="./assets/img/row3/1.jpg" width="220" height="187" alt="devil" /></div>
-              <div class="gallery__item"><img src="./assets/img/row3/2.jpg" width="220" height="187" alt="killed" /></div>
-              <div class="gallery__item"><img src="./assets/img/row3/3.jpg" width="220" height="187" alt="devil" /></div>
-              <div class="gallery__item"><img src="./assets/img/row3/4.jpg" width="220" height="187" alt="abstract" /></div>              
+            <div class="gallery" id="gallery">
+              <div class="gallery__item"><img src="./assets/img/gallery/1.jpg" width="220" height="187" alt="boat" /></div>
+              <div class="gallery__item"><img src="./assets/img/gallery/2.jpg" width="220" height="187" alt="sum" /></div>
+              <div class="gallery__item"><img src="./assets/img/gallery/3.jpg" width="220" height="187" alt="city" /></div>
+              <div class="gallery__item"><img src="./assets/img/gallery/4.jpg" width="220" height="187" alt="robot" /></div>
+              <div class="gallery__item"><img src="./assets/img/gallery/5.jpg" width="220" height="187" alt="red ass" /></div>
+              <div class="gallery__item"><img src="./assets/img/gallery/6.jpg" width="220" height="187" alt="sdk" /></div>
+              <div class="gallery__item"><img src="./assets/img/gallery/7.jpg" width="220" height="187" alt="abstract" /></div>
+              <div class="gallery__item"><img src="./assets/img/gallery/8.jpg" width="220" height="187" alt="chicken" /></div>
+              <div class="gallery__item"><img src="./assets/img/gallery/9.jpg" width="220" height="187" alt="devil" /></div>
+              <div class="gallery__item"><img src="./assets/img/gallery/10.jpg" width="220" height="187" alt="killed" /></div>
+              <div class="gallery__item"><img src="./assets/img/gallery/11.jpg" width="220" height="187" alt="devil" /></div>
+              <div class="gallery__item"><img src="./assets/img/gallery/12.jpg" width="220" height="187" alt="abstract" /></div>              
              </div>
            </div>
         </div>
       </section>
     
-      <section class="aboutus">
+      <section class="aboutus" id ="aboutus">
         <div class="wrapper_aboutus">
           <div class="content">
             <h2>About Us</h2>
             <p class="long">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="peoples layout_3column">
               <div class="aboutus__item">
-                <img src="./assets/img/AdamJensen.jpg" width="300" height="300" alt="Adam Jensen"/>
+                <img src="./assets/img/people/AdamJensen.jpg" width="300" height="300" alt="Adam Jensen"/>
                 <h3>Adam Jensen</h3>
                 <p class="justified">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                 <div class="social">
@@ -161,7 +164,7 @@
                 </div>
               </div>
               <div class="aboutus__item">
-                <img src="./assets/img/DesmondMiles.jpg" width="300" height="300" alt="Desmond Miles"/>
+                <img src="./assets/img/people/DesmondMiles.jpg" width="300" height="300" alt="Desmond Miles"/>
                 <h3>Desmond Miles</h3>
                 <p class="justified">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                 <div class="social">
@@ -172,7 +175,7 @@
                 </div>
               </div>
                 <div class="aboutus__item">
-                <img src="./assets/img/ScolaraVisari.jpg" width="300" height="300" alt="Scolara Visari"/>
+                <img src="./assets/img/people/ScolaraVisari.jpg" width="300" height="300" alt="Scolara Visari"/>
                 <h3>Scolara Visari</h3>
                 <p class="justified">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                 <div class="social">
@@ -187,18 +190,18 @@
         </div>
       </section>
 
-      <section class="getquote">
+      <section class="getquote" id ="contact">
         <div class="wrapper_getquote">
           <div class="content">
             <h2>Get a Quote</h2>
             <p class="long">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <form method="post" target="_self" action="#">
+            <form>
               <div class="inputs">
                 <input type="text" id="quote_name" class="quote_input" minlength="2" placeholder="Name (Required)" required />
                 <input type="email" id="quote_email" class="quote_input" placeholder="Email (Required)" required />
                 <input type="text" id="quote_subject" class="quote_input" placeholder="Subject" />
-                <textarea id="quote_description" class="quote_input quote_description" rows="5" cols="50" placeholder="Describe your project in detail..." ></textarea>
-                <input id="quote_submit" class="quote_submit" type="submit" value="Submit"/>
+                <textarea id="quote_description" class="quote_input quote_description" rows="5" cols="50" maxlength="250" placeholder="Describe your project in detail..." ></textarea>
+                <input id="quote_submit" class="quote_submit" type="button" value="Submit"/>
               </div>
               <div class="contacts">
                 <h3>Contact Information</h3>
@@ -220,7 +223,14 @@
           </div>
         </div>
       </section>
-
+      <div id="modal_message" class="hidden">
+        <div id="message">
+          <h3 class="message_notification">Письмо отправлено.</h3>
+          <p id="message_subject">Без темы</h3>        
+          <p id="message_description">Без описания</p>
+          <input type="button" id="btn_close" value="OK"/>
+       </div>
+      </div>
     </main>
     <footer>
       <div class="wrapper-footer">
@@ -238,6 +248,6 @@
       </div>
     </footer>
   </div>
-
+<script src="script.js"></script>
 </body>
 </html>
